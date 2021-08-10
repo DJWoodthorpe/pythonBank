@@ -14,19 +14,19 @@ def mainMenu():
 
 
 def checkInput():
-    selection = int((input('Option: ')))
-    if selection not in [1,2,3]:
-        print('Please select a valid option')
+    selection = (input('Option: '))
+    if selection == 1:
+        #check balance
+        print('checking balance')
+    elif selection == 2:
+        #withdrawal
+        print('withdrawal')
+    elif selection == 3:
+        #deposit
+        print('deposit')
     else:
-        if selection == 1:
-            #check balance
-            print('checking balance')
-        elif selection == 2:
-            #withdrawal
-            print('withdrawal')
-        elif selection == 3:
-            #deposit
-            print('deposit')
+        print('Please select a valid option')
+        
 
 
 # calls mainMenu screen
